@@ -1,0 +1,33 @@
+    1  sudo apt update 
+    2  sudo apt upgrade 
+    3  whoami
+    4  hostname
+    5  mkdir /home/anton/week1
+    6  cd week1/
+    7  grep gcc /usr/bin
+    8  grep gcc /usr/bin/
+    9  cd /usr/bin/ |ls|grep gcc
+   10  cd /usr/bin/ |ls
+   11  man ls
+   12  ls /usr/bin/
+   13  ls /usr/bin/ |grep gcc
+   14  ls /usr/bin/ |grep gcc|sort -r
+   15  ls /usr/bin/ |grep gcc|sort -r >ex1.txt
+   16  ls
+   17  xed
+   18  nano ex1.txt 
+   19  history > ex2.txt
+   20  ls
+   21  date
+   22  nano ex1.txt 
+   23  nano ex3.sh 
+   24  ./ex3.sh
+   25  sudo ./ex3.sh
+   26  ./ex3.sh
+   27  sh ex1.txt
+   28  gedit main.c
+   29  gcc main.c -o ex4
+   30  gedit main.c
+   31  gcc main.c -o ex4
+   32  ./ex4
+   33  history > ex2.txt
