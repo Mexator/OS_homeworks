@@ -3,6 +3,7 @@ touch file.txt
 if ln file.txt file.lock
 then
 echo 1 >> file.txt
+rm file.lock
 fi
 
 while true
