@@ -15,5 +15,4 @@ let last_str=last_str+1
 echo $last_str >> file.txt
 rm file.lock
 fi
-sleep 1
 done
