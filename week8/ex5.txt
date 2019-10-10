@@ -1,0 +1,7 @@
+The difference between physical and virtual address is that the first 
+one is address in physical memory and the second one is in virtual. Physical
+address is the actual number of the memory block in main memory of the computer.
+Virtual address is the convenient abstraction that allow programmer to handle
+IO operations in the program address space like it is physical memory although
+physical memory blocks with adjacent virual addresses (for example 0xfe and 0xff) 
+can be in totally different parts of the physical memory. 

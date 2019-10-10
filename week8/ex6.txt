@@ -1,0 +1,3 @@
+The machine has 8KB pages, then virtual address should have 13 bits for offset.
+The rest 3 bits if for specifying virtual page. Hence, the maximal amount of virtual
+pages in the system is 2^3=8. Therefore, page table with 8 entries is needed.  
