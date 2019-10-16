@@ -1,0 +1,5 @@
+I've constructed a set of references that requests the same page 128 times. 
+Since after first (and only) page fault the page is loaded into memory, no more 
+page faults will occur. Thus we got:
+    Hits: 127, Misses: 1, Total: 128
+    Hit/Miss ratio: 127.000000
