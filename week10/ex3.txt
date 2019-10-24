@@ -1,0 +1,4 @@
+ANSWERS:
+660 - read/write for owner and group, no access to others
+775 - read/write/execute for owner and group, read/execute to others
+777 - read/write/execute for all
