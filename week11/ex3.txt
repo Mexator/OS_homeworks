@@ -1,0 +1,6 @@
+The stdout stream is line-buffered. In program 1 both processes print "Hello\n" 
+because after forking stdout's buffer contains "Hello". Hence, after printing 
+a newline character (does not matter by whom), buffer will be flushed and output 
+will be written out to terminal by both processes (and then the 2nd newline 
+character will be printed). In the 2nd case flushing is done before the forking.
+After fork() parent and child both print newline character and 2 empty lines appear. 
