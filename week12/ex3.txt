@@ -1,0 +1,28 @@
+**FILESIZE = 19400**
+With buffer size 128 and w/o SYNC:
+real    0m0,006s
+user    0m0,000s
+sys     0m0,006s
+With buffer size 1024 and w/o SYNC:
+real    0m0,004s
+user    0m0,003s
+sys     0m0,001s
+With buffer size 128 and SYNC:
+real    0m3,764s
+user    0m0,007s
+sys     0m0,037s
+With buffer size 1024 and SYNC:
+real    0m0,454s
+user    0m0,001s
+sys     0m0,008s
+
+As can bee seen from stats above, time for copying a file inversely proportional
+to buffer size and becomes much greater with O_SYNC flag. 
+Increasing of delay with O_SYNC flag can be explained with that waiting is done 
+while disk will finish writing out the file to ensure that its content is 
+consistent and until finish of this writing process is suspended. Thus, 
+parallel writing is disabled with O_SYNC flag. 
+Decreasing a delay with increasing buffer size can be explained with that
+disk reads blocks of data simultaneously, so with increased buffer size less 
+reads/writes to disk required to finish copying. (Nevertheless there is disc 
+cache acquiring information from it is time-consuming, too)
